@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxicons Drag and Drop Image Upload</title>
+    <!-- Importing the Boxicons style-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css">
+    <!-- Importing Bootstrap styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <style>
+        .dropzone {
+            border: 2px dashed #ced4da;
+            border-radius: 4px;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加背景阴影 */
+        }
+
+        .dropzone:hover {
+            background-color: #f8f9fa;
+        }
+
+        #previewContainer {
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加背景阴影 */
+            padding: 20px;
+            border-radius: 4px;
+        }
+
+        img {
+            width: 200px; /* Setting the image width */
+            height: 200px; /* Keep the aspect ratio */
+            margin-bottom: 10px;
+            border-radius: 4px; /* Add rounded corners */
+            border: 1px solid #ced4da; /* Add a border effect */
+        }
+
+        .icon {
+            font-size: 48px;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 class="mt-5" style="text-align: center">Sharing Corner</h1>
+    <h3 class="mt-5" style="text-align: center">Here you can see everyone’s thoughts.</h3>
+
+    <!-- Drag the upload area -->
+    <div>
+        <div id="dropzone" class="dropzone" onclick="openFileInput()">
+            <input type="file" id="fileInput" style="display: none;" accept="image/*" onchange="handleFileSelect(event)">
+            <p class="icon"><i class='bx bxs-cloud-upload'></i></p>
+            <p>Please upload it here</p>
+        </div>
+    </div>
+
+    <!-- Preview area -->
+    <div>
+        <p>Exhibition Corner</p>
+        <div id="previewContainer">
+            <!-- The image will be displayed here -->
+        </div>
+    </div>
+</div>
+
+<!-- Import the Bootstrap and JavaScript files -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/upload.js"></script>
+</body>
+</html>

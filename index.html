@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <!--=============== TITLE ===============-->
+        <title>Responsive Website</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <!-- Navigation logo with image and text -->
+                <a href="#" class="nav__logo">
+                    <img src="assets/images/logo.png" alt="" class="nav__logo-img">
+                    How The Machine Perceive Power
+                </a>
+
+                <!-- Navigation menu -->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Sharing Corner</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#plaza" class="nav__link">Interactive Plaza</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#valley" class="nav__link">Heartbeat Valley</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#new" class="nav__link">Opinion Storm</a>
+                        </li>
+                    </ul>
+
+                    <!-- Close button for the navigation menu (typically for mobile screens) -->
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x' ></i>
+                    </div>
+
+                    <!-- Decorative image in the navigation menu -->
+                    <img src="assets/images/nav-light.png" alt="" class="nav__img">
+                </div>
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                    <!-- Toggle button -->
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-grid-alt' ></i>
+                    </div>
+                </div>
+
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <div>
+                        <!-- Video element that plays automatically, loops, and has controls -->
+                        <video src="assets/videos/shenbei.mp4" loop autoplay controls alt="" class="home__img" />
+                    </div>
+
+                    <!-- Container for the introductory text and call-to-action button -->
+                    <div class="home__data">
+                        <h1 class="home__title">Welcome to the exploration of power as seen through the eyes of the algorithm!</h1>
+                        <p class="home__description">
+                            What do you think power is?
+                            Is it something that can be dissolved? Please share with us what you see as a symbol of power.
+                        </p>
+                        <!-- Call-to-action button for users to get started by uploading content -->
+                        <a href="upload.html" class="button">Get Started</a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== INTERACTIVE PLAZA ====================-->
+            <section class="plaza section container" id="plaza">
+                <div class="plaza__container grid">
+                    <div class="plaza__data">
+                        <h2 class="section__title plaza__title">
+                            Interactive Plaza
+                        </h2>
+                        <!-- Description of the Interactive Plaza's features and functionality -->
+                        <p class="plaza__description">
+                            There is a program with interactive interface based on StyleGan2 and p5.js.
+                            The change speed of the power image generated by StyleGan2 is controlled through gesture detection.
+                            When the speed of human gesture manipulation is faster,
+                            the algorithm "archive" on the screen will also run faster.
+                            However, when the human hands are closed,
+                            the "archive" will stop running and save the picture in the background for the audience to print,
+                            leaving the power in the eyes of the algorithm.
+                        </p>
+
+                        <!-- Call-to-action button linking to the gesture-controlled feature -->
+                        <a href="gesture/index.html" class="button">Portal</a>
+                    </div>
+
+                    <div>
+                        <!-- Video element that plays automatically, loops, and has controls -->
+                        <video src="assets/videos/more.mp4" loop autoplay controls alt="" class="home__img" />
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== HEARTBEAT VALLEY ====================-->
+            <section class="valley section container" id="valley">
+                <!-- Title for the Heartbeat Valley section -->
+                <h2 class="section__title">Heartbeat Valley</h2>
+                <p class="plaza__description">
+                    There are so many collections that don't have names! Give it a new name!
+                </p>
+
+                <!-- Container for the collection cards displayed in a grid layout -->
+                <div class="valley__container grid">
+                    <!-- Repeated card structure for each collection item -->
+                    <!-- Each card includes an image, a heart icon, a title span, and an input field for naming -->
+                    <article class="valley__card">
+                        <img src="assets/images/01.png" alt="" class="valley__img">
+                        <i class='bx bx-heart valley__icon'></i>
+                        <span class="valley__title"></span>
+                        <input type="text"/>
+                    </article>
+
+                    <article class="valley__card">
+                        <img src="assets/images/03.png" alt="" class="valley__img">
+                        <i class='bx bx-heart valley__icon'></i>
+                        <span class="valley__title"></span>
+                        <input type="text"/>
+                    </article>
+
+                    <article class="valley__card">
+                        <img src="assets/images/05.png" alt="" class="valley__img">
+                        <i class='bx bx-heart valley__icon'></i>
+                        <span class="valley__title"></span>
+                        <input type="text"/>
+                    </article>
+
+                    <article class="valley__card">
+                        <img src="assets/images/07.png" alt="" class="valley__img">
+                        <i class='bx bx-heart valley__icon'></i>
+                        <span class="valley__title"></span>
+                        <input type="text"/>
+                    </article>
+
+                    <article class="valley__card">
+                        <img src="assets/images/08.png" alt="" class="valley__img">
+                        <i class='bx bx-heart valley__icon'></i>
+                        <span class="valley__title"></span>
+                        <input type="text"/>
+                    </article>
+
+                    <article class="valley__card">
+                        <img src="assets/images/09.png" alt="" class="valley__img">
+                        <i class='bx bx-heart valley__icon'></i>
+                        <span class="valley__title"></span>
+                        <input type="text"/>
+                    </article>
+
+                    <article class="valley__card">
+                        <img src="assets/images/010.png" alt="" class="valley__img">
+                        <i class='bx bx-heart valley__icon'></i>
+                        <span class="valley__title"></span>
+                        <input type="text"/>
+                    </article>
+
+                    <article class="valley__card">
+                        <img src="assets/images/012.png" alt="" class="valley__img">
+                        <i class='bx bx-heart valley__icon'></i>
+                        <span class="valley__title"></span>
+                        <input type="text"/>
+                    </article>
+
+                    <article class="valley__card">
+                        <img src="assets/images/021.png" alt="" class="valley__img">
+                        <i class='bx bx-heart valley__icon'></i>
+                        <span class="valley__title"></span>
+                        <input type="text"/>
+                    </article>
+
+                    <article class="valley__card">
+                        <img src="assets/images/024.png" alt="" class="valley__img">
+                        <i class='bx bx-heart valley__icon'></i>
+                        <span class="valley__title"></span>
+                        <input type="text"/>
+                    </article>
+
+                    <article class="valley__card">
+                        <img src="assets/images/025.png" alt="" class="valley__img">
+                        <i class='bx bx-heart valley__icon'></i>
+                        <span class="valley__title"></span>
+                        <input type="text"/>
+                    </article>
+
+                    <article class="valley__card">
+                        <img src="assets/images/026.png" alt="" class="valley__img">
+                        <i class='bx bx-heart valley__icon'></i>
+                        <span class="valley__title"></span>
+                        <input type="text"/>
+                    </article>
+
+                    <article class="valley__card">
+                        <img src="assets/images/031.png" alt="" class="valley__img">
+                        <i class='bx bx-heart valley__icon'></i>
+                        <span class="valley__title"></span>
+                        <input type="text"/>
+                    </article>
+
+                    <article class="valley__card">
+                        <img src="assets/images/冠玺Dragonhide%20Crown%20of%20the%20Jade%20Seal.png" alt="" class="valley__img">
+                        <i class='bx bx-heart valley__icon'></i>
+                        <span class="valley__title">Dragonhide Crown of the Jade Seal</span>
+                    </article>
+
+                    <article class="valley__card">
+                        <img src="assets/images/帝龙座圣杯融合体The%20Holy%20Grail%20Fusion%20of%20Tyron.jpg" alt="" class="valley__img">
+                        <i class='bx bx-heart valley__icon'></i>
+                        <span class="valley__title">The Holy Grail Fusion of Tyron</span>
+                    </article>
+
+                    <article class="valley__card">
+                        <img src="assets/images/御龙阁玉玺椅Regal%20Wyrm%20Pavilion%20Chair%20with%20Jade%20Seal.png" alt="" class="valley__img">
+                        <i class='bx bx-heart valley__icon'></i>
+                        <span class="valley__title">Regal Wyrm Pavilion Chair with Jade Seal</span>
+                    </article>
+
+                    <article class="valley__card">
+                        <img src="assets/images/龙座圣匣融合体Serpent's%20Throne%20Grail%20Fusion.png" alt="" class="valley__img">
+                        <i class='bx bx-heart valley__icon'></i>
+                        <span class="valley__title">Serpent's Throne Grail Fusion</span>
+                    </article>
+
+                    <article class="valley__card">
+                        <img src="assets/images/龙座神盏Divine%20Dragon%20Monarch's%20Chalice%20Throne.png" alt="" class="valley__img">
+                        <i class='bx bx-heart valley__icon'></i>
+                        <span class="valley__title">Divine Dragon Monarch's Chalice Throne</span>
+                    </article>
+
+                    <article class="valley__card">
+                        <img src="assets/images/龙徽圣匣Dragoncrest%20Chalice%20of%20Imperial%20Majesty.jpg" alt="" class="valley__img">
+                        <i class='bx bx-heart valley__icon'></i>
+                        <span class="valley__title">Dragoncrest Chalice of Imperial Majesty</span>
+                    </article>
+
+                    <article class="valley__card">
+                        <img src="assets/images/龙皮玉玺Dragon%20skin%20jade%20seal.png" alt="" class="valley__img">
+                        <i class='bx bx-heart valley__icon'></i>
+                        <span class="valley__title">Dragon skin jade seal</span>
+                    </article>
+
+                </div>
+            </section>
+
+            <!--==================== MESSAGE ====================-->
+            <section class="message section container" id="new">
+                <h2 class="section__title">Opinion Storm</h2>
+                <div class="message__container grid">
+                    <!-- Form for submitting a message -->
+                    <form id="message_from" action="###" class="message__form">
+                        <h2 class="message__title">Write your thoughts or any comments!</h2>
+                        <!-- Input field for writing a message -->
+                        <input type="text" placeholder="Write your message" class="message__input">
+                        <!-- Button for submitting the message -->
+                        <button class="button message__button" onclick="submitForm(event)">Send Message</button>
+                    </form>
+                </div>
+                <!-- Container where submitted messages will be displayed -->
+                <div id="message_content" class="valley__container grid">
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+                <section class="footer" >
+                    <div class="footer__container container grid">
+                        <div>
+                            <!-- Container for the logo image -->
+                            <img src="assets/images/logo.png" alt="" class="footer__img1">
+                        </div>
+
+                        <!-- Container for the footer text data -->
+                        <div class="home__data">
+                            <h4>
+                                Do you see the relationship between power and algorithms?
+                            </h4>
+                            <p class="home__description">
+                                Feel free to contact me with any comments! Contact: 123@.
+                            </p>
+                            <p>
+                                RR reserved
+                            </p>
+                        </div>
+                    </div>
+                </section>
+        </footer>
+
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="assets/js/libs/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/libs/swiper-bundle.min.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
+
