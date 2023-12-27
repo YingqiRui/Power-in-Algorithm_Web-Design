@@ -22,12 +22,6 @@
       /* This centers our sketch vertically. */
       align-items: center;
     }
-
-    #iframeContainer {
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
   </style>
 
   <!-- Loading libraries and sketch -->
@@ -38,9 +32,8 @@
 </head>
 
 <body>
-<div id="iframeContainer">
-  <iframe width="400" height="300" src="topLeft.html" frameborder="0"></iframe>
-</div>
+  <!-- Add the video element here with the same id used in sketch.js -->
+  <video id="vid" controls></video>
 </body>
 
 </html>
