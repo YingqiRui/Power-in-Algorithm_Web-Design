@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gesture_Control_Video</title>
+
+  <style>
+    html {
+      height: 100%;
+    }
+
+    body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+
+      /* This centers our sketch horizontally. */
+      justify-content: center;
+
+      /* This centers our sketch vertically. */
+      align-items: center;
+    }
+
+    #iframeContainer {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  </style>
+
+  <!-- Loading libraries and sketch -->
+  <script src="libs/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js" type="text/javascript"></script>
+  <script src="sketch.js"></script>
+</head>
+
+<body>
+<div id="iframeContainer">
+  <iframe width="400" height="300" src="topLeft.html" frameborder="0"></iframe>
+</div>
+</body>
+
+</html>
